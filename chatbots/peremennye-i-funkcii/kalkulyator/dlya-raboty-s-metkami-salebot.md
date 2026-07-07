@@ -284,3 +284,19 @@ has\_client\_multiple\_labels()
 <figure><img src="../../../.gitbook/assets/image (768).png" alt=""><figcaption></figcaption></figure>
 {% endtab %}
 {% endtabs %}
+
+## Получить массив ID всех меток клиента
+
+get\_all\_client\_label\_ids(client\_id)
+
+{% tabs %}
+{% tab title="Описание" %}
+get\_all\_client\_label\_ids(client\_id) — возвращает массив с ID всех меток, присвоенных клиенту.
+
+Если у клиента нет меток — возвращает пустой массив \[].
+
+Параметры:
+
+client\_id — идентификатор клиента Salebot. Если не передан, используется идентификатор текущего клиента.
+{% endtab %}
+{% endtabs %}

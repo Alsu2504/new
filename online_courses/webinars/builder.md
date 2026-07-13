@@ -12,15 +12,15 @@ description: Проведение вебинара стало ещё проще
 
 Перейдите в раздел трансляции, выбрав пункт Создать трансляцию в меню слева:
 
-<figure><img src="../../.gitbook/assets/Снимок экрана 2025-06-18 в 13.58.09.png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../../.gitbook/assets/Снимок экрана 2025-06-18 в 13.58.09.png" alt=""><figcaption></figcaption></figure></div>
 
 Далее кликните на "Создать трансляцию":
 
-<figure><img src="../../.gitbook/assets/Снимок экрана 2025-06-18 в 14.07.07.png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../../.gitbook/assets/Снимок экрана 2025-06-18 в 14.07.07.png" alt=""><figcaption></figcaption></figure></div>
 
 Откроется форма настройки трансляции:
 
-<figure><img src="../../.gitbook/assets/Снимок экрана 2025-06-18 в 14.09.30.png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../../.gitbook/assets/Снимок экрана 2025-06-18 в 14.09.30.png" alt=""><figcaption></figcaption></figure></div>
 
 Разберём за что отвечает каждое из полей. Обязательные поля для ввода отмечены звездочками\*.
 
@@ -46,13 +46,13 @@ URL - сгенерированная ссылка на вашу трансляц
 
 Повторять трансляцию - функция для осуществления автоповтора трансляции в выбранный период и время: для этого активируйте переключатель "Повторять трансляцию" и выберите необходимые дни недели.
 
-<figure><img src="../../.gitbook/assets/Снимок экрана 2025-06-18 в 14.11.17.png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../../.gitbook/assets/Снимок экрана 2025-06-18 в 14.11.17.png" alt=""><figcaption></figcaption></figure></div>
 
 Время запуска трансляции будет совпадать со временем первой трансляции.
 
 RTMP сервер, Ключ трансляции и URL проигрывателя - поля для настройки потокового вещания, вы можете предоставить ссылку для просмотра трансляции в Zoom или других приложениях.
 
-<figure><img src="../../.gitbook/assets/image (39).png" alt=""><figcaption><p>Настройка потокового вещания</p></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../../.gitbook/assets/image (39).png" alt=""><figcaption><p>Настройка потокового вещания</p></figcaption></figure></div>
 
 Фото перед началом вебинара - заставка для трансляции
 
@@ -62,15 +62,15 @@ RTMP сервер, Ключ трансляции и URL проигрывател
 
 Вы можете задать время, через которое будет появляться изображение после завершения трансляции.
 
-<figure><img src="../../.gitbook/assets/Снимок экрана 2025-06-18 в 14.15.27.png" alt="" width="375"><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../../.gitbook/assets/Снимок экрана 2025-06-18 в 14.15.27.png" alt="" width="375"><figcaption></figcaption></figure></div>
 
 Настройки автовебинара идентичны настройкам онлайн-трансляции, но у вас также есть возможность добавить ссылку на видео для запуска трансляции.
 
-<figure><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXcI6fne0TcVT03OLP2qlrxs8LcZLE_bKvyDLrL6gqaCKJlWSTlwoxynk_o8_vj6tILgrhZ_lo85fYt7-OFU0cYxYI3Ujd7wqulU5k2mqh-OgAvaP-_HUAUVorlzElSO3Df23Lzg0w?key=AYUpCenzlfBL1b97HUAIeg" alt="" width="563"><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXcI6fne0TcVT03OLP2qlrxs8LcZLE_bKvyDLrL6gqaCKJlWSTlwoxynk_o8_vj6tILgrhZ_lo85fYt7-OFU0cYxYI3Ujd7wqulU5k2mqh-OgAvaP-_HUAUVorlzElSO3Df23Lzg0w?key=AYUpCenzlfBL1b97HUAIeg" alt="" width="563"><figcaption></figcaption></figure></div>
 
 ## Вкладка Настройки комнаты
 
-<figure><img src="../../.gitbook/assets/Снимок экрана 2025-06-18 в 14.23.01.png" alt="" width="563"><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../../.gitbook/assets/Снимок экрана 2025-06-18 в 14.23.01.png" alt="" width="563"><figcaption></figcaption></figure></div>
 
 * **❗️Ведущий вебинара** - имя и фамилия ведущего или подпись под окном с трансляцией - обязательный параметр.
 * **Загрузить фото ведущего** - фото ведущего, рекомендуется использовать изображение квадратное. С соотношением сторон 1:1.
@@ -79,21 +79,21 @@ RTMP сервер, Ключ трансляции и URL проигрывател
 * **Разрешить писать гостям** - данный бегунок позволит включить в диалог гостей трансляции. Если чекбокс активирован, то при входе зрителю будет предложено ввести имя и писать в чат под этим именем.
 * **Отобразить тарифы из курса** - если у вас созданы курсы, то при включении переключателя у вас появится поле с выпадающим списком из которого вы можете выбрать курс, тарифы которого необходимо отображать при трансляции.&#x20;
 
-<figure><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXeDcTaeVDWyEnBIFPwYjJ_l7tFRIXowWlJGL42biuxf4TpFflB_gMi7q_L-5kmniJz9JRt4SdRXl6jAsigqp4ESCgCzTDW-5WNdzoogfzS3y1mpPNnGd81xNvRrWXjZSz7ctN5AGg?key=AYUpCenzlfBL1b97HUAIeg" alt="" width="563"><figcaption><p>Поле выбора курса для отображения тарифов</p></figcaption></figure>
+<div data-with-frame="true"><figure><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXeDcTaeVDWyEnBIFPwYjJ_l7tFRIXowWlJGL42biuxf4TpFflB_gMi7q_L-5kmniJz9JRt4SdRXl6jAsigqp4ESCgCzTDW-5WNdzoogfzS3y1mpPNnGd81xNvRrWXjZSz7ctN5AGg?key=AYUpCenzlfBL1b97HUAIeg" alt="" width="563"><figcaption><p>Поле выбора курса для отображения тарифов</p></figcaption></figure></div>
 
 Кнопка под трансляцией, Ссылка кнопки, Цвет текста кнопки, Цвет фона кнопки - настройка кнопки под окном трансляции во время эфира.
 
 Можете выбрать расположение кнопки в мобильной версии:
 
-<figure><img src="../../.gitbook/assets/Снимок экрана 2025-06-18 в 14.21.15.png" alt="" width="563"><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../../.gitbook/assets/Снимок экрана 2025-06-18 в 14.21.15.png" alt="" width="563"><figcaption></figcaption></figure></div>
 
 Непосредственно при проведении трансляции, вы можете отследить количество участников, кликнувших по кнопке, а также увидеть список:
 
-<figure><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXcNdf0jYjHddHzUxYYDaXKnZUUuXyOH41beNQjWDTHk9MmfwvY3n_zyJswE8FGRDXqoS6EEPdEqPIVZgs7rSQj8izycStqXtWAvZjj_I1cOb-6WWWLNQkZJMlRA1qTjyKSejfnhGw?key=AYUpCenzlfBL1b97HUAIeg" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXcNdf0jYjHddHzUxYYDaXKnZUUuXyOH41beNQjWDTHk9MmfwvY3n_zyJswE8FGRDXqoS6EEPdEqPIVZgs7rSQj8izycStqXtWAvZjj_I1cOb-6WWWLNQkZJMlRA1qTjyKSejfnhGw?key=AYUpCenzlfBL1b97HUAIeg" alt=""><figcaption></figcaption></figure></div>
 
 ## Вкладка Баннеры
 
-<figure><img src="../../.gitbook/assets/Снимок экрана 2025-06-18 в 14.23.43.png" alt="" width="563"><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../../.gitbook/assets/Снимок экрана 2025-06-18 в 14.23.43.png" alt="" width="563"><figcaption></figcaption></figure></div>
 
 #### Форма настройки трансляции - Баннеры
 
@@ -101,19 +101,19 @@ RTMP сервер, Ключ трансляции и URL проигрывател
 
 В настройке баннеров также существует функционал отображения или скрытия баннеров:
 
-<figure><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXeX0GW7q2YgoxrQu275OL9rqyhgREr97K-BHsYCO56Jn5HFrmOVhUyIStoaySSKPymVlEEHiNkV-nxStjuhHjqusPlh-_0ZFwLT_FJIGXUp8cXy4vZHeRuObC3ZMngAMxRo-g3Qug?key=AYUpCenzlfBL1b97HUAIeg" alt="" width="375"><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXeX0GW7q2YgoxrQu275OL9rqyhgREr97K-BHsYCO56Jn5HFrmOVhUyIStoaySSKPymVlEEHiNkV-nxStjuhHjqusPlh-_0ZFwLT_FJIGXUp8cXy4vZHeRuObC3ZMngAMxRo-g3Qug?key=AYUpCenzlfBL1b97HUAIeg" alt="" width="375"><figcaption></figcaption></figure></div>
 
 Новые зрители, и все, кто зашел на страницу, увидят баннеры в соответствии с настройками видимости.
 
 Также настройки видимости можно установить непосредственно в комнате трансляций: для использования зайдите в комнату трансляции, нажмите на шестеренку в верхнем правом углу и выберите там настройки баннеров.
 
-<figure><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXduKBnpE-7Ej4ENdPtAIe8B3rckgbW9ZGS1h_UbrQ3jyI_lFMnzeG5TNa9xyqzGIFqq-5tIm_zNRUNkLTZCY3cfy5iOSEg-foLY8m9ojkOG1O6RjsblMpYE3lEKeVYJ1ylwENJ1?key=AYUpCenzlfBL1b97HUAIeg" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXduKBnpE-7Ej4ENdPtAIe8B3rckgbW9ZGS1h_UbrQ3jyI_lFMnzeG5TNa9xyqzGIFqq-5tIm_zNRUNkLTZCY3cfy5iOSEg-foLY8m9ojkOG1O6RjsblMpYE3lEKeVYJ1ylwENJ1?key=AYUpCenzlfBL1b97HUAIeg" alt=""><figcaption></figcaption></figure></div>
 
 После выбора нажмите на кнопку "Применить"
 
 После выполненных настроек сохраните окно трансляций. В общем списке трансляций вы сможете легко получить ссылку или перейти на созданную трансляцию:
 
-<figure><img src="../../.gitbook/assets/Снимок экрана 2025-06-18 в 13.58.09.png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../../.gitbook/assets/Снимок экрана 2025-06-18 в 13.58.09.png" alt=""><figcaption></figcaption></figure></div>
 
 Во вкладке с созданной трансляцией вы можете отследить количество кликов по баннеру и увидеть список пользователей:
 

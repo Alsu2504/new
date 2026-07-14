@@ -2,7 +2,7 @@
 
 Перейдите в раздел сайты и нажмите на кнопку "Создать":
 
-<figure><img src="../../.gitbook/assets/Снимок экрана 2025-07-23 в 16.25.24.png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../../.gitbook/assets/Снимок экрана 2025-07-23 в 16.25.24.png" alt=""><figcaption></figcaption></figure></div>
 
 При клике на кнопку "Создать" откроется выпадающее меню с типами сайта, где нужно выбрать "Интернет-магазин":
 

@@ -146,3 +146,33 @@
 {% hint style="info" %}
 Если вы хотите установить собственный домен, то [рассказано об этом здесь](../builder/nastroiki-saita.md#kak-ustanovit-svoi-domen).
 {% endhint %}
+
+## CRM и интернет-магазин
+
+Интернет-магазин непосредственно связан с CRM-системой.
+
+Чтобы заказ корректно отображался в разделе "Заявки", необходимо настроить CRM-систему, то есть создать воронку:
+
+<div data-with-frame="true"><figure><img src="../../.gitbook/assets/Снимок экрана 2026-07-14 в 17.52.18.png" alt=""><figcaption></figcaption></figure></div>
+
+{% hint style="info" %}
+[Подробнее о настройках CRM рассказали в одноименном разделе.](https://app.gitbook.com/s/-LxKl4rC_EcwBAz40Qn_/crm-sistema)
+{% endhint %}
+
+После настройки CRM-системы и после заказа вашего клиента в интернет-магазине, будет создана соответствующая заявка с составом заказа и создана сделка в разделе CRM на первом этапе воронки.
+
+<div data-with-frame="true"><figure><img src="../../.gitbook/assets/Снимок экрана 2026-07-14 в 17.57.23.png" alt="" width="375"><figcaption></figcaption></figure></div>
+
+Также после заказа в разделе "Клиенты" Вы увидите новых созданных лидов:
+
+<div data-with-frame="true"><figure><img src="../../.gitbook/assets/Снимок экрана 2026-07-14 в 18.00.49.png" alt=""><figcaption></figcaption></figure></div>
+
+В диалоге с клиентом будут приходить соответствующие уведомления (колбеки) о новом заказе из интернет-магазина, на которые вы можете настроить реакцию чат-бота, например, в email или мессенджеры.
+
+Также новая заявка будет отображена в разделе "Заявки" в вашем сайте:
+
+<div data-with-frame="true"><figure><img src="../../.gitbook/assets/Снимок экрана 2026-07-14 в 18.02.40.png" alt=""><figcaption></figcaption></figure></div>
+
+В "Заявках" вы подробно можете узнать информацию о клиенте и другую необходимую информацию:
+
+<div data-with-frame="true"><figure><img src="../../.gitbook/assets/Снимок экрана 2026-07-14 в 18.05.57.png" alt=""><figcaption></figcaption></figure></div>

@@ -1,5 +1,123 @@
 # Функции для AI-ассистента
 
+## **Прямой запрос к модели**
+
+answer = ai\_request('request', question)
+
+Пример:
+
+answer = ai\_request('Ты вежливый консультант магазина цветов.', question)
+
+1. Первый аргумент — инструкция для модели (кто она и как отвечать)
+2. question — системная переменная, в ней всегда лежит текст последнего сообщения клиента
+
+<div data-with-frame="true"><figure><img src="../../.gitbook/assets/Снимок экрана 2026-07-15 в 16.43.26.png" alt="" width="563"><figcaption></figcaption></figure></div>
+
+{% hint style="info" %}
+Обратите внимание!
+
+В выражениях переменные пишутся просто по имени, без #{}). В ответ приходит обычный текст: можно сразу отправлять клиенту или класть в переменную.
+{% endhint %}
+
+Метод терпеливо ждёт ответа модели — даже долгие запросы (большие схемы, длинные тексты) отработают без обрыва.
+
+Если нужен не свободный текст, а строгие данные (категория, да/нет, извлечённые поля) — передайте третьим аргументом схему ответа.&#x20;
+
+Писать схемы с нуля не нужно — возьмите готовый шаблон и поменяйте названия полей под себя.
+
+<details>
+
+<summary>Шаблон «выбор из списка» (классификация обращений, тональность и т.п.)</summary>
+
+local result = ai\_request('Определи категорию обращения.', question, {
+
+&#x20;     "type": "object",
+
+&#x20;     "properties": {"category": {"type": "string", "enum": \["жалоба", "вопрос", "заказ"]\}},
+
+&#x20;     "required": \["category"]
+
+&#x20; })
+
+&#x20; category = get(result, 'category')
+
+Модель ответит строго одним из значений из enum — ничем другим.
+
+<div data-with-frame="true"><figure><img src="../../.gitbook/assets/Снимок экрана 2026-07-15 в 16.44.47.png" alt="" width="563"><figcaption></figcaption></figure></div>
+
+</details>
+
+<details>
+
+<summary> Шаблон «да/нет»</summary>
+
+`local result = ai_request('Клиент согласен на покупку?', question, {`
+
+&#x20;     `"type": "object",`
+
+&#x20;     `"properties": {"agree": {"type": "boolean"}},`
+
+&#x20;     `"required": ["agree"]`
+
+&#x20; `})`
+
+&#x20; `agree = get(result, 'agree')`
+
+<div data-with-frame="true"><figure><img src="../../.gitbook/assets/Снимок экрана 2026-07-15 в 16.45.37.png" alt=""><figcaption></figcaption></figure></div>
+
+</details>
+
+<details>
+
+<summary>Шаблон «извлечь данные из текста»</summary>
+
+`local result = ai_request('Извлеки имя и телефон из сообщения.', question, {`
+
+&#x20;     `"type": "object",`
+
+&#x20;     `"properties": {"name": {"type": "string"}, "phone": {"type": "string"}},`
+
+&#x20;     `"required": ["name", "phone"]`
+
+&#x20; `})`
+
+&#x20; `client_name = get(result, 'name')`
+
+&#x20; `client_phone = get(result, 'phone')`
+
+<div data-with-frame="true"><figure><img src="../../.gitbook/assets/Снимок экрана 2026-07-15 в 16.46.34.png" alt="" width="563"><figcaption></figcaption></figure></div>
+
+</details>
+
+<details>
+
+<summary>📖 Мини-словарик, чтобы править шаблоны под себя:</summary>
+
+1. "string" — текст, "number" — число, "boolean" — true/false;
+2. enum — разрешённый список значений (модель не сможет ответить ничем другим);
+3. required — перечень обязательных полей;
+4. названия полей (category, name, phone...) — любые ваши.
+
+</details>
+
+Ответ по схеме приходит JSON-строкой, отдельные поля достаём привычным get().&#x20;
+
+{% hint style="info" %}
+Обращаем внимание!
+
+В примерах result объявлен через local — сырой ответ ИИ не сохранится в карточку, туда попадут только нужные поля.
+{% endhint %}
+
+#### Режим размышления
+
+Четвёртым аргументом можно включить режим размышления — модель сначала обдумает задачу и только потом ответит.&#x20;
+
+Полезно для сложных запросов: анализ, расчёты, многошаговая логика. Ответ будет заметно дольше, поэтому по умолчанию режим выключен.
+
+answer = ai\_request('Реши задачу клиента и объясни решение.', question, '', true)
+
+Если схема ответа не нужна, третьим аргументом передайте пустую строку '', как в примере.
+
 ## **Удалить историю переписки с ассистентом**
 
 clear\_assistant\_chat\_history() - функция без параметров, удаляет историю переписки клиента с ассистентом.&#x20;
@@ -8,11 +126,11 @@ clear\_assistant\_chat\_history() - функция без параметров, 
 
 1. Настройки блока в конструкторе:
 
-<figure><img src="../../.gitbook/assets/Снимок экрана 2024-06-17 в 18.04.06.png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../../.gitbook/assets/Снимок экрана 2024-06-17 в 18.04.06.png" alt=""><figcaption></figcaption></figure></div>
 
 2. Настройка во вкладке Аи-ассистента:
 
-<figure><img src="../../.gitbook/assets/Снимок экрана 2024-06-17 в 18.05.24.png" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="../../.gitbook/assets/Снимок экрана 2024-06-17 в 18.05.24.png" alt=""><figcaption></figcaption></figure></div>
 
 ## **Отправить вопрос ассистенту**
 
